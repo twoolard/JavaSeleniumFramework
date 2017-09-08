@@ -27,19 +27,19 @@ public class Hooks extends BaseUtil {
     @Before
     public void InitializeTest(Scenario scenario) throws Exception{
 
-        DesiredCapabilities caps = new DesiredCapabilities();
-        caps.setCapability("platform", System.getProperty("platform"));
-        caps.setCapability("browserName", System.getProperty("browserName"));
-        caps.setCapability("version", System.getProperty("version"));
-        caps.setCapability("parentTunnel","sauce_admin");
-        caps.setCapability("tunnelIdentifier", "OptumSharedTunnel-Prd");
-
 //        DesiredCapabilities caps = new DesiredCapabilities();
-//        caps.setCapability("platform", "OS X 10.12");
-//        caps.setCapability("browserName", "safari");
-//        caps.setCapability("version", "10.0");
-//        caps.setCapability("parentTunnel", "sauce_admin");
+//        caps.setCapability("platform", System.getProperty("platform"));
+//        caps.setCapability("browserName", System.getProperty("browserName"));
+//        caps.setCapability("version", System.getProperty("version"));
+//        caps.setCapability("parentTunnel","sauce_admin");
 //        caps.setCapability("tunnelIdentifier", "OptumSharedTunnel-Prd");
+
+        DesiredCapabilities caps = new DesiredCapabilities();
+        caps.setCapability("platform", "OS X 10.12");
+        caps.setCapability("browserName", "safari");
+        caps.setCapability("version", "10.0");
+        caps.setCapability("parentTunnel", "sauce_admin");
+        caps.setCapability("tunnelIdentifier", "OptumSharedTunnel-Prd");
 
         jobName = scenario.getName();
         caps.setCapability("name", jobName);
