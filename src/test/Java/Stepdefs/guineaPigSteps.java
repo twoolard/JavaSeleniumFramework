@@ -23,21 +23,17 @@ public class guineaPigSteps extends BaseUtil {
 
     @Given("^I am on the Guinea Pig homepage$")
     public void iAmOnTheGuineaPigHomepage() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
         page = CommentTextPage.visitPage(base.driver);
     }
 
     @When("^I submit a comment$")
     public void iSubmitAComment() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
         commentInputText = UUID.randomUUID().toString();
         page.submitComment(commentInputText);
     }
 
     @Then("^I should see that comment displayed$")
     public void iShouldSeeThatCommentDisplayed() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
         assertThat(page.getSubmittedCommentText(), containsString(commentInputText));
-
     }
 }
