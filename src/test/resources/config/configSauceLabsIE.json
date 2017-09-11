@@ -1,0 +1,22 @@
+{
+	"browser name": "IE",
+	"cloud connect": {
+		"browser version": "11",
+		"platform name": "windows 7",
+		"test suite name": "Windows 7 IE Test Env",
+		"url": "http://%s:%s@ondemand.saucelabs.com:80/wd/hub",
+		"username": "mgiri",
+		"password": "9938b2fb-d83f-479b-83ad-ce83d11acd79",
+		"screen resolution": "1920x1080",
+		"maxDuration": 6000,
+		"commandTimeout": 600,
+		"idleTimeout": 600,
+		"parentTunnel":"sauce_admin",
+		"tunnelIdentifier":"OptumSharedTunnel-Stg",
+		"avoidProxy":"true"
+	}
+}
+
+
+
+}

@@ -70,27 +70,6 @@
                 <executions>
                     <execution>
                         <id>generateRunners</id>
-                        <phase>generate-test-sources</phase>
-                        <goals>
-                            <goal>generateRunners</goal>
-                        </goals>
-                        <configuration>
-                            <!-- Mandatory -->
-                            <glue>Stepdefs</glue>
-                            <featuresDirectory>src\test\Java\features</featuresDirectory>
-                            <format>junit</format>
-                            <monochrome>true</monochrome>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>com.github.temyers</groupId>
-                <artifactId>cucumber-jvm-parallel-plugin</artifactId>
-                <version>2.2.0</version>
-                <executions>
-                    <execution>
-                        <id>generateRunners</id>
                         <phase>validate</phase>
                         <goals>
                             <goal>generateRunners</goal>
@@ -98,13 +77,13 @@
                         <configuration>
                             <!-- Mandatory -->
                             <!-- comma separated list of package names to scan for glue code -->
-                            <glue>Stepdefs</glue>
+                            <glue>com,optum,stepDefs</glue>
                             <!-- These are the default values -->
                             <!-- Where to output the generated Junit tests -->
-                            <outputDirectory>${project.build.directory}/generated-test-sources/features
+                            <outputDirectory>${project.build.directory}/generated-test-sources/com.optum.features
                             </outputDirectory>
                             <!-- The diectory containing your feature files.  -->
-                            <featuresDirectory>src\test\Java\features</featuresDirectory>
+                            <featuresDirectory>src/test/resources/features/</featuresDirectory>
                             <!-- Directory where the cucumber report files shall be written  -->
                             <cucumberOutputDir>${project.build.directory}/cucumber_reports/${gitsuitename}_results
                             </cucumberOutputDir>

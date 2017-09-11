@@ -1,0 +1,14 @@
+{
+"browser name":"firefox",
+    "cloud connect":{
+    "browser version":"43",
+    "platform name":"Windows 7",
+    "test suite name":"Windows 7 firefox 43",
+        "url":"http://%s:%s@ondemand.saucelabs.com:80/wd/hub",
+        "username":"atorab",
+        "password":"5777b812-4d31-4e4b-9f83-b606e3cc3602",
+        "parentTunnel":" sauce_admin",
+"tunnelIdentifier":" OptumSharedTunnel-Stg"
+        
+    }
+}
