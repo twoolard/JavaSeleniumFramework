@@ -77,10 +77,10 @@
                         <configuration>
                             <!-- Mandatory -->
                             <!-- comma separated list of package names to scan for glue code -->
-                            <glue>com,optum,stepDefs</glue>
+                            <glue>com.optum.stepDefs</glue>
                             <!-- These are the default values -->
                             <!-- Where to output the generated Junit tests -->
-                            <outputDirectory>${project.build.directory}/generated-test-sources/com.optum.features
+                            <outputDirectory>${project.build.directory}/generated-test-sources/src/test/resources/features
                             </outputDirectory>
                             <!-- The diectory containing your feature files.  -->
                             <featuresDirectory>src/test/resources/features/</featuresDirectory>

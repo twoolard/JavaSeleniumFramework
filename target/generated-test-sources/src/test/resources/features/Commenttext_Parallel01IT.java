@@ -8,6 +8,6 @@ import cucumber.api.junit.Cucumber;
 features = {"/home/docker/IdeaProjects/learning_cucumber_automationframework/src/test/resources/features/CommentText.feature"},
 plugin = {"junit:/home/docker/IdeaProjects/learning_cucumber_automationframework/target/cucumber_reports/${gitsuitename}_results/1.junit"},
 monochrome = true,
- tags = {"~@ignore"}, glue = { "com", "optum", "stepDefs" })
+ tags = {"~@ignore"}, glue = { "com.optum.stepDefs" })
 public class Commenttext_Parallel01IT {
 }

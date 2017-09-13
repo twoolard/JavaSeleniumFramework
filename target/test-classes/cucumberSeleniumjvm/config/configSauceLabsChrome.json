@@ -1,0 +1,13 @@
+{
+	"browser name": "chrome",
+		"cloud connect": {
+		"browser version": "58",
+		"platform name": "windows 7",
+		"test suite name": "Windows 7 chrome Test Env",
+			"url": "http://%s:%s@ondemand.saucelabs.com:80/wd/hub",
+			"username":"twoolard",
+			"password":"84a41d20-3dd5-4405-8040-4d3cb9197047",
+			"parentTunnel":"sauce_admin",
+			"tunnelIdentifier":" OptumSharedTunnel-Stg"
+	}
+}

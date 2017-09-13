@@ -10,6 +10,7 @@
       <sourceFolder url="file://$MODULE_DIR$/target/generated-test-sources/features" isTestSource="true" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/target/generated-test-sources/com.optum.features" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/target/generated-test-sources/src/test/resources/features" isTestSource="true" generated="true" />
       <excludeFolder url="file://$MODULE_DIR$/target/classes" />
       <excludeFolder url="file://$MODULE_DIR$/target/cucumber-report-html" />
       <excludeFolder url="file://$MODULE_DIR$/target/cucumber_reports" />
