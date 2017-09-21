@@ -1,8 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0">
-<testcase classname="Guinea Pig comment" name="Can submit comment" time="0">
-<failure message="The scenario has pending or undefined step(s)"><![CDATA[Given I am on the Guinea Pig homepage.......................................undefined
-When I submit a comment.....................................................undefined
-Then I should see that comment displayed....................................undefined
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0.110914">
+<testcase classname="Guinea Pig comment" name="Can submit comment" time="0.110914">
+<failure message="java.lang.NullPointerException&#10;&#9;at com.optum.pageobjects.CommentTextPage.visitPage(CommentTextPage.java:40)&#10;&#9;at com.optum.pageobjects.CommentTextPage.visitPage(CommentTextPage.java:29)&#10;&#9;at com.optum.stepDefs.guineaPigSteps.iAmOnTheGuineaPigHomepage(guineaPigSteps.java:26)&#10;&#9;at ✽.Given I am on the Guinea Pig homepage(/home/docker/IdeaProjects/learning_cucumber_automationframework/src/test/resources/features/CommentText.feature:4)&#10;"><![CDATA[Given I am on the Guinea Pig homepage.......................................failed
+When I submit a comment.....................................................skipped
+Then I should see that comment displayed....................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at com.optum.pageobjects.CommentTextPage.visitPage(CommentTextPage.java:40)
+	at com.optum.pageobjects.CommentTextPage.visitPage(CommentTextPage.java:29)
+	at com.optum.stepDefs.guineaPigSteps.iAmOnTheGuineaPigHomepage(guineaPigSteps.java:26)
+	at ✽.Given I am on the Guinea Pig homepage(/home/docker/IdeaProjects/learning_cucumber_automationframework/src/test/resources/features/CommentText.feature:4)
 ]]></failure>
 </testcase>
 </testsuite>

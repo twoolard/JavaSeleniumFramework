@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 13018943907,
+  "duration": 3023803092,
   "status": "passed"
 });
 formatter.scenario({
@@ -37,25 +37,25 @@ formatter.match({
   "location": "guineaPigSteps.iAmOnTheGuineaPigHomepage()"
 });
 formatter.result({
-  "duration": 1785276674,
+  "duration": 962749421,
   "status": "passed"
 });
 formatter.match({
   "location": "guineaPigSteps.iSubmitAComment()"
 });
 formatter.result({
-  "duration": 2950270231,
+  "duration": 298286994,
   "status": "passed"
 });
 formatter.match({
   "location": "guineaPigSteps.iShouldSeeThatCommentDisplayed()"
 });
 formatter.result({
-  "duration": 655546271,
+  "duration": 47840361,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1649213016,
+  "duration": 65165536,
   "status": "passed"
 });
 formatter.uri("test.feature");
@@ -67,7 +67,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 12621110612,
+  "duration": 2800268771,
   "status": "passed"
 });
 formatter.scenario({
@@ -118,32 +118,32 @@ formatter.match({
   "location": "LoginStep.iNavigateToTheLoginPage()"
 });
 formatter.result({
-  "duration": 1333664084,
+  "duration": 1054373639,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStep.i_enter_the_following_for_Login(DataTable)"
 });
 formatter.result({
-  "duration": 2802238895,
+  "duration": 511918104,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStep.iClickLoginButton()"
 });
 formatter.result({
-  "duration": 4781864915,
+  "duration": 336524019,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStep.iShouldSeeTheUserformPage()"
 });
 formatter.result({
-  "duration": 811106951,
+  "duration": 89571377,
   "status": "passed"
 });
 formatter.after({
-  "duration": 629863256,
+  "duration": 83806637,
   "status": "passed"
 });
 });

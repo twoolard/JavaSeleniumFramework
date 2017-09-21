@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Test_Parallel02IT
 -------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.849 s - in Test_Parallel02IT
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.315 s - in Test_Parallel02IT

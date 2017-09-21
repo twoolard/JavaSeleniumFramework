@@ -1,0 +1,9 @@
+browserName=firefox
+browserType=Sauce
+version=43
+platform=Windows 7
+parentTunnel=sauce_admin
+tunnelIdentifier=OptumSharedTunnel-Prd
+
+
+

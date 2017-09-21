@@ -1,0 +1,6 @@
+browserName=safari
+browserType=Sauce
+version=10.0
+platform=OS X 10.11
+parentTunnel=sauce_admin
+tunnelIdentifier=OptumSharedTunnel-Prd

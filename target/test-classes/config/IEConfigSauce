@@ -1,0 +1,6 @@
+browserName=internet explorer
+browserType=Sauce
+version=11
+platform=Windows 7
+parentTunnel=sauce_admin
+tunnelIdentifier=OptumSharedTunnel-Prd
