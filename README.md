@@ -19,10 +19,12 @@ A framework I built using Java, Selenium, Cucumber and JUnit with Sauce labs Int
 ### Running the tests
  * In a terminal, navigate to the root level of that directory, then run the command:
 
-    $
+    $ mvn verify
 
 ### View Tests
  * [Sauce Labs Dashboard](https://saucelabs.com/beta/dashboard/)
+
+ * [Cucumber Html Reports] (/target/cucumber-report-html/cucumber-html-reports)
 
 ### Resources
  * [SeleniumHQ Documentation](http://www.seleniumhq.org/docs/)

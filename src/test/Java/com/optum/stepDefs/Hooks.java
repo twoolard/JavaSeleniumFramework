@@ -16,13 +16,10 @@ import java.io.FileReader;
 import java.util.Properties;
 
 public class Hooks extends BaseUtil {
-
-    public static final String USERNAME = "twoolard";
+    public static final String USERNAME = System.getenv("SAUCE_USERNAME");
+    public static final String ACCESS_KEY = System.getenv("SAUCE_ACCESS_KEY");
     public static final String sauceBrowser = "Sauce";
     public String browserType = "";
-
-
-    public static final String ACCESS_KEY = "84a41d20-3dd5-4405-8040-4d3cb9197047";
     public static final String URL = "https://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.saucelabs.com:443/wd/hub";
     public String sessionId;
     public String jobName;
