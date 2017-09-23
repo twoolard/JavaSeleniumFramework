@@ -60,7 +60,6 @@ public class Hooks extends BaseUtil {
 
 
             } else {
-                System.setProperty("webdriver.gecko.driver", "src/test/resources/drivers/geckodriver");
                 base.driver = new FirefoxDriver();
             }
 
