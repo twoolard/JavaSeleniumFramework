@@ -7,9 +7,9 @@ A framework I built using Java, Selenium, Cucumber and JUnit with Sauce labs Int
  * Install [Maven](https://maven.apache.org/install.html)
  * In the terminal, export your Sauce Labs credentials as environmental variables:
 
-    $ export SAUCE_USERNAME=<your Sauce Labs username>
+    $ export SAUCE_USERNAME="your Sauce Labs username"
 
-    $ export SAUCE_ACCESS_KEY=<your Sauce Labs access key>
+    $ export SAUCE_ACCESS_KEY="your Sauce Labs access key"
 
 
 ### Installing
