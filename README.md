@@ -24,7 +24,7 @@ A framework I built using Java, Selenium, Cucumber and JUnit with Sauce labs Int
 ### View Tests
  * [Sauce Labs Dashboard](https://saucelabs.com/beta/dashboard/)
 
- * [Cucumber Html Reports] (/target/cucumber-report-html/cucumber-html-reports)
+ * Cucumber Html Reports (/target/cucumber-report-html/cucumber-html-reports)
 
 ### Resources
  * [SeleniumHQ Documentation](http://www.seleniumhq.org/docs/)
