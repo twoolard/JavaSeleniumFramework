@@ -1,4 +1,4 @@
-package com.optum.base;
+package com.company.base;
 
 import com.saucelabs.saucerest.SauceREST;
 import org.json.JSONException;

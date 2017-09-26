@@ -1,10 +1,10 @@
-package com.optum.stepDefs;
+package com.company.stepDefs;
 
-import com.optum.base.BaseUtil;
+import com.company.base.BaseUtil;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import com.optum.pageobjects.CommentTextPage;
+import com.company.pageobjects.CommentTextPage;
 
 import java.util.UUID;
 

@@ -1,4 +1,4 @@
-package com.optum.pageobjects;
+package com.company.pageobjects;
 
 import junit.framework.Assert;
 import org.openqa.selenium.WebDriver;

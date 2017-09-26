@@ -1,7 +1,7 @@
-package com.optum.stepDefs;
+package com.company.stepDefs;
 
-import com.optum.base.BaseUtil;
-import com.optum.base.SauceUtils;
+import com.company.base.BaseUtil;
+import com.company.base.SauceUtils;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;

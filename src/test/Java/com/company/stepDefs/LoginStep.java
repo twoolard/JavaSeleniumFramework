@@ -1,11 +1,11 @@
-package com.optum.stepDefs;
+package com.company.stepDefs;
 
-import com.optum.base.BaseUtil;
+import com.company.base.BaseUtil;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import com.optum.pageobjects.LoginPage;
+import com.company.pageobjects.LoginPage;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -77,7 +77,7 @@
                         <configuration>
                             <!-- Mandatory -->
                             <!-- comma separated list of package names to scan for glue code -->
-                            <glue>com.optum.stepDefs</glue>
+                            <glue>com.company.stepDefs</glue>
                             <!-- These are the default values -->
                             <!-- Where to output the generated Junit tests -->
                             <outputDirectory>${project.build.directory}/generated-test-sources/src/test/resources/features
