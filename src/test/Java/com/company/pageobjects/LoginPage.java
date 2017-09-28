@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class LoginPage {
+public class LoginPage extends PageObjectBase {
     public static String url ="http://executeautomation.com/demosite/Login.html";
     public WebDriver driver;
 
@@ -41,8 +41,7 @@ public class LoginPage {
     }
 
     public void Login(String username, String password){
-        WebDriverWait wait = new WebDriverWait(driver, 50);
-        wait.until(ExpectedConditions.visibilityOf(txtUserName));
+        waitForElement(txtPassword, driver);
         txtUserName.clear();
         txtUserName.sendKeys(username);
         txtPassword.clear();
@@ -50,14 +49,13 @@ public class LoginPage {
     }
 
     public void ClickLogin(){
-        WebDriverWait wait = new WebDriverWait(driver, 50);
-        wait.until(ExpectedConditions.elementToBeClickable(btnLogin));
+        waitForElement(btnLogin, driver);
         btnLogin.submit();
     }
 
     public void isDisplayed() {
-        WebDriverWait wait = new WebDriverWait(driver, 50);
-        wait.until(ExpectedConditions.visibilityOf(title));
+        waitForPageLoad(driver);
+        waitForElement(title, driver);
         Assert.assertEquals("Its not displayed", title.isDisplayed(), true);
     }
 }

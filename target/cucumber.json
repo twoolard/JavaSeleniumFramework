@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 6176225071,
+              "duration": 3207321186,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 67143561,
+              "duration": 67498072,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1414837067,
+              "duration": 911963271,
               "status": "passed"
             },
             "line": 4,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 590544343,
+              "duration": 313364682,
               "status": "passed"
             },
             "line": 5,
@@ -58,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 47373625,
+              "duration": 37978544,
               "status": "passed"
             },
             "line": 6,
@@ -84,7 +84,7 @@
         "before": [
           {
             "result": {
-              "duration": 2364931147,
+              "duration": 2446001726,
               "status": "passed"
             },
             "match": {
@@ -92,14 +92,14 @@
             }
           }
         ],
-        "line": 4,
-        "name": "Login with correct username and password",
+        "line": 12,
+        "name": "Login with correct username and password using scenario outline",
         "description": "",
-        "id": "loginfeature;login-with-correct-username-and-password",
+        "id": "loginfeature;login-with-correct-username-and-password-using-scenario-outline;;2",
         "after": [
           {
             "result": {
-              "duration": 71595992,
+              "duration": 73606061,
               "status": "passed"
             },
             "match": {
@@ -108,11 +108,11 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 1463723775,
+              "duration": 824917670,
               "status": "passed"
             },
             "line": 5,
@@ -124,38 +124,36 @@
           },
           {
             "result": {
-              "duration": 671445194,
+              "duration": 588213796,
               "status": "passed"
             },
             "line": 6,
-            "name": "I enter the following for Login",
+            "name": "I enter execute and automation",
             "match": {
-              "location": "LoginStep.i_enter_the_following_for_Login(DataTable)"
+              "arguments": [
+                {
+                  "val": "execute",
+                  "offset": 8
+                },
+                {
+                  "val": "automation",
+                  "offset": 20
+                }
+              ],
+              "location": "LoginStep.iEnterUsernameAndPassword(String,String)"
             },
-            "rows": [
-              {
-                "cells": [
-                  "Username",
-                  "Password"
-                ],
-                "line": 7
-              },
-              {
-                "cells": [
-                  "admin",
-                  "adminpassword"
-                ],
-                "line": 8
-              }
+            "matchedColumns": [
+              0,
+              1
             ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 551766936,
+              "duration": 324213914,
               "status": "passed"
             },
-            "line": 9,
+            "line": 7,
             "name": "I click login button",
             "match": {
               "location": "LoginStep.iClickLoginButton()"
@@ -164,10 +162,104 @@
           },
           {
             "result": {
-              "duration": 61173300,
+              "duration": 1625065014,
               "status": "passed"
             },
-            "line": 10,
+            "line": 8,
+            "name": "I should see the userform page",
+            "match": {
+              "location": "LoginStep.iShouldSeeTheUserformPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2277105738,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.InitializeTest(Scenario)"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Login with correct username and password using scenario outline",
+        "description": "",
+        "id": "loginfeature;login-with-correct-username-and-password-using-scenario-outline;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 62017624,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.TearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 801493846,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "LoginStep.iNavigateToTheLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 544116786,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter testing and QA",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testing",
+                  "offset": 8
+                },
+                {
+                  "val": "QA",
+                  "offset": 20
+                }
+              ],
+              "location": "LoginStep.iEnterUsernameAndPassword(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 354178665,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click login button",
+            "match": {
+              "location": "LoginStep.iClickLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1601561494,
+              "status": "passed"
+            },
+            "line": 8,
             "name": "I should see the userform page",
             "match": {
               "location": "LoginStep.iShouldSeeTheUserformPage()"

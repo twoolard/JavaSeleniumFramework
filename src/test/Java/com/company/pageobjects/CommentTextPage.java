@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class CommentTextPage {
+public class CommentTextPage extends PageObjectBase {
 
     @FindBy(linkText = "i am a link")
     private WebElement theActiveLink;

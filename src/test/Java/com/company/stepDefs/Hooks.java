@@ -5,6 +5,9 @@ import com.company.base.SauceUtils;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -123,10 +126,26 @@ public class Hooks extends BaseUtil {
             SauceUtils.UpdateResults(USERNAME, ACCESS_KEY, !scenario.isFailed(), sessionId);
             System.out.println("SessionID:" + sessionId + " " + "job-name:" + jobName + " " + "Tested on:" + browserType);
 
+            if (scenario.isFailed()) {
+                byte[] screenshot = getScreenshot(base.driver);
+                scenario.embed(screenshot, "image/png");
+            }
         } else {
             System.out.println("job-name:" + jobName + " " + "Tested on:" + browserType);
+
+            if (scenario.isFailed()) {
+                byte[] screenshot = getScreenshot(base.driver);
+                scenario.embed(screenshot, "image/png");
+            }
 
         }
 
     }
+
+    public byte[] getScreenshot(WebDriver driver) {
+        return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+    }
 }
+
+
+
