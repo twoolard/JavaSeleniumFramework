@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 3207321186,
+  "duration": 2993224982,
   "status": "passed"
 });
 formatter.scenario({
@@ -37,25 +37,25 @@ formatter.match({
   "location": "guineaPigSteps.iAmOnTheGuineaPigHomepage()"
 });
 formatter.result({
-  "duration": 911963271,
+  "duration": 902508842,
   "status": "passed"
 });
 formatter.match({
   "location": "guineaPigSteps.iSubmitAComment()"
 });
 formatter.result({
-  "duration": 313364682,
+  "duration": 285380760,
   "status": "passed"
 });
 formatter.match({
   "location": "guineaPigSteps.iShouldSeeThatCommentDisplayed()"
 });
 formatter.result({
-  "duration": 37978544,
+  "duration": 40211103,
   "status": "passed"
 });
 formatter.after({
-  "duration": 67498072,
+  "duration": 70903480,
   "status": "passed"
 });
 formatter.uri("test.feature");
@@ -128,7 +128,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 2446001726,
+  "duration": 2451589193,
   "status": "passed"
 });
 formatter.scenario({
@@ -167,7 +167,7 @@ formatter.match({
   "location": "LoginStep.iNavigateToTheLoginPage()"
 });
 formatter.result({
-  "duration": 824917670,
+  "duration": 1181215324,
   "status": "passed"
 });
 formatter.match({
@@ -184,29 +184,29 @@ formatter.match({
   "location": "LoginStep.iEnterUsernameAndPassword(String,String)"
 });
 formatter.result({
-  "duration": 588213796,
+  "duration": 635125854,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStep.iClickLoginButton()"
 });
 formatter.result({
-  "duration": 324213914,
+  "duration": 372230986,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStep.iShouldSeeTheUserformPage()"
 });
 formatter.result({
-  "duration": 1625065014,
+  "duration": 1585072098,
   "status": "passed"
 });
 formatter.after({
-  "duration": 73606061,
+  "duration": 84736762,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2277105738,
+  "duration": 2401887798,
   "status": "passed"
 });
 formatter.scenario({
@@ -245,7 +245,7 @@ formatter.match({
   "location": "LoginStep.iNavigateToTheLoginPage()"
 });
 formatter.result({
-  "duration": 801493846,
+  "duration": 845315066,
   "status": "passed"
 });
 formatter.match({
@@ -262,25 +262,25 @@ formatter.match({
   "location": "LoginStep.iEnterUsernameAndPassword(String,String)"
 });
 formatter.result({
-  "duration": 544116786,
+  "duration": 488181042,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStep.iClickLoginButton()"
 });
 formatter.result({
-  "duration": 354178665,
+  "duration": 312738252,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStep.iShouldSeeTheUserformPage()"
 });
 formatter.result({
-  "duration": 1601561494,
+  "duration": 1611490656,
   "status": "passed"
 });
 formatter.after({
-  "duration": 62017624,
+  "duration": 81641444,
   "status": "passed"
 });
 });

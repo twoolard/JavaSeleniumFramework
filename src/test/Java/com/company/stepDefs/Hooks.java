@@ -49,7 +49,7 @@ public class Hooks extends BaseUtil {
             Properties properties = new Properties();
             properties.load(reader);
             browserType = properties.getProperty("browserType");
-            if (browserType == sauceBrowser) {
+            if (browserType.equals(sauceBrowser)) {
                 caps.setCapability("platform", properties.getProperty("platform"));
                 caps.setCapability("browserName", properties.getProperty("browserName"));
                 caps.setCapability("version", properties.getProperty("version"));
@@ -122,7 +122,7 @@ public class Hooks extends BaseUtil {
     @After
     public void TearDown(Scenario scenario) throws Exception {
         base.driver.quit();
-        if (browserType == sauceBrowser) {
+        if (browserType.equals(sauceBrowser)) {
             SauceUtils.UpdateResults(USERNAME, ACCESS_KEY, !scenario.isFailed(), sessionId);
             System.out.println("SessionID:" + sessionId + " " + "job-name:" + jobName + " " + "Tested on:" + browserType);
 
