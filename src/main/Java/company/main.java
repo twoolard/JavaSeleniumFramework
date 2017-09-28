@@ -1,4 +1,4 @@
-package com.company;
+package company;
 
 /**
  * Created by twoolard on 9/6/2017.
