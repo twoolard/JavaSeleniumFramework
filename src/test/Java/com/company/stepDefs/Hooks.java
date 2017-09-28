@@ -28,12 +28,7 @@ public class Hooks extends BaseUtil {
     public static final String URL = "https://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.saucelabs.com:443/wd/hub";
     public String sessionId;
     public String jobName;
-    protected static final String FirefoxConfig_FILE_RELATIVE_PATH = "src/test/resources/config/FirefoxConfigSauce";
-    protected static final String ChromeConfig_FILE_RELATIVE_PATH = "src/test/resources/config/ChromeConfigSauce";
-    protected static final String IEConfig_FILE_RELATIVE_PATH = "src/test/resources/config/IEConfigSauce";
-    protected static final String SafariConfig_FILE_RELATIVE_PATH = "src/test/resources/config/SafariConfigSauce";
-    protected static final String Firefox_Local_RELATIVE_PATH = "src/test/resources/config/FireFox";
-
+    protected static final String Config_FILE_RELATIVE_PATH = "src/test/resources/config/FireFox";
 
     private BaseUtil base;
 
@@ -44,7 +39,7 @@ public class Hooks extends BaseUtil {
     @Before
     public void InitializeTest(Scenario scenario) throws Exception {
 
-        try (FileReader reader = new FileReader(Firefox_Local_RELATIVE_PATH)) {
+        try (FileReader reader = new FileReader(Config_FILE_RELATIVE_PATH)) {
             DesiredCapabilities caps = new DesiredCapabilities();
             Properties properties = new Properties();
             properties.load(reader);
